@@ -24,6 +24,21 @@ app.get('/api/hvaler', (req, res)=>{
    res.json(obj)
 })
 
+app.get('/api/kagerOgKatte', (req, res)=>{
+    const obj = {
+       'Citronmåne':{
+           'farve': 'gul',
+           'vægt': '1/120000 måne',
+       },
+       'Helmut':{
+            'farve': 'sort',
+            'vægt': 'lidt for tung',
+       }
+
+    }
+  res.json(obj)
+})
+
 //hvis der kommer klinenter til endpointet dato
 app.get('/api/dato', (req, res)=>{
     res.send('Du er kommet til mit dato api')
